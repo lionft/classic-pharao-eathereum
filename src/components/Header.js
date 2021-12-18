@@ -40,13 +40,15 @@ const Header = () => {
     let TheOwnerAddress = CONFIG.OWNER_ADDRESS;
     TheOwnerAddress = TheOwnerAddress.toUpperCase();
 
+    // eslint-disable-next-line
     if (WalletAddress == TheOwnerAddress) {
       CONFIG.WEI_COST = 0;
     } else if (data.totalSupply > 1 && data.totalSupply < 5000)
+      // eslint-disable-next-line
       CONFIG.WEI_COST = CONFIG.WEI_COST;
 
     let cost = CONFIG.WEI_COST;
-
+    // eslint-disable-next-line
     let cost1 = CONFIG.COST1;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
