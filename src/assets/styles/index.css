@@ -1,0 +1,459 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('../fonts/MADEOuterSans-Black.woff2') format('woff2'),
+    url('../fonts/MADEOuterSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('../fonts/MADEOuterSans-Light.woff2') format('woff2'),
+    url('../fonts/MADEOuterSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('../fonts/MADEOuterSans-Bold.woff2') format('woff2'),
+    url('../fonts/MADEOuterSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('../fonts/MADEOuterSans-Medium.woff2') format('woff2'),
+    url('../fonts/MADEOuterSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('../fonts/MADEOuterSans-Thin.woff2') format('woff2'),
+    url('../fonts/MADEOuterSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('../fonts/MADEOuterSans.woff2') format('woff2'),
+    url('../fonts/MADEOuterSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'made-outer-sans';
+  src: url('./assets/fonts/made_outer_sans_thin_personal_use-webfont.woff2')
+      format('woff2'),
+    url('./assets/fonts/made_outer_sans_thin_personal_use-webfont.woff')
+      format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('./assets/fonts/made_outer_sans_light_personal_use-webfont.woff2')
+      format('woff2'),
+    url('./assets/fonts/made_outer_sans_light_personal_use-webfont.woff')
+      format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('./assets/fonts/made_outer_sans_regular_personal_use-webfont.woff2')
+      format('woff2'),
+    url('./assets/fonts/made_outer_sans_regular_personal_use-webfont.woff')
+      format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('./assets/fonts/made_outer_sans_medium_personal_use-webfont.woff2')
+      format('woff2'),
+    url('./assets/fonts/made_outer_sans_medium_personal_use-webfont.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('./assets/fonts/made_outer_sans_bold_personal_use-webfont.woff2')
+      format('woff2'),
+    url('./assets/fonts/made_outer_sans_bold_personal_use-webfont.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'made-outer-sans';
+  src: url('./assets/fonts/made_outer_sans_black_personal_use-webfont.woff2')
+      format('woff2'),
+    url('./assets/fonts/made_outer_sans_black_personal_use-webfont.woff')
+      format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: fallback;
+} */
+
+:root {
+  /* colors */
+  --black: #070707;
+  --red: #c62122;
+  --white: #fff;
+  --purple: #47a44c;
+
+  --gray-100: #e8e8e8;
+  --gray-200: #444444;
+  --gray-300: #1b1b1b;
+
+  /* color intension */
+  --primary: var(--black);
+  --accent: var(--purple);
+  --body-text: var(--white);
+  --button-bg: var(--purple);
+  --button-color: var(--white);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--primary);
+  color: var(--body-text);
+  font-family: 'made-outer-sans' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Components */
+
+.Navbar {
+  width: 100%;
+  background-color: var(--primary);
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+.Main__Margin {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.Navbar__inner {
+  max-width: 1100px;
+  height: 64px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar__logo {
+  width: 130px;
+  height: auto;
+  margin-top: 16px;
+}
+
+.Navbar__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.mobile__bg {
+  background: #070707;
+}
+.Landing__hero {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.Landing__hero-inner {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.Landing__hero-video {
+  position: relative;
+}
+.Landing__video-control-btn {
+  width: 48px;
+  height: 48px;
+  opacity: 0.7;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  transform: translate(-50%, -50%);
+}
+
+.Landing__video-control-btn:hover {
+  cursor: pointer;
+}
+
+.Landing__video-control-btn img {
+  border-radius: 50%;
+  padding: 4px;
+  position: relative;
+  background-color: #eee;
+
+  /* display: inline-block;
+  transform: translate((-50%, 50%)); */
+}
+
+.Landing__inner video {
+  width: 100%;
+  height: 100%;
+}
+
+.Landing__hero-button {
+  min-width: 200px;
+  display: inline-block;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  /* align-items: center;
+  justify-content: center; */
+  /* position: absolute; */
+  /* bottom: 24%; */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  white-space: nowrap;
+}
+
+/* .CountDown__inner {
+  border: 1px solid var(--gray-300);
+} */
+
+.CountDown__timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FrequentlyAsked__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FrequentlyAsked__question:hover {
+  cursor: pointer;
+}
+
+.JoinSociety__socials {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+.JoinSociety__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-bottom: 16px;
+}
+
+.JoinSociety__social-image,
+.JoinSociety__social-content {
+  flex: 0 0 35%;
+}
+.JoinSociety__social-image img {
+  margin: 0 auto;
+}
+
+.TheTeam__members {
+  max-width: 1200px;
+  flex-direction: column;
+  margin: 0 auto 24px 0;
+  display: flex;
+}
+
+.Landing__welcome-images,
+.Specs__images,
+.WelcomeClub__images {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.TheTeam__member img {
+  margin: 0 auto;
+}
+
+.TheTeam__member,
+.Specs__image,
+.WelcomeClub__image,
+.Landing__welcome-image {
+  flex: 0 0 45%;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.WelcomeClub__image img {
+  margin: 0 auto;
+}
+
+.TheTeam__member:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.Landing-hero-button {
+  font-size: 20px;
+}
+
+.PreSale__button,
+.Landing__hero-button,
+.JoinSociety__button,
+.CommunityPerks__button {
+  background-color: var(--accent);
+}
+
+.CommunityPerks__button-outline {
+  border: 1px solid #fff;
+}
+
+.Gutters__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.gray-100 {
+  color: var(--gray-100);
+}
+
+.gray-200 {
+  color: var(--gray-200);
+}
+
+.gray-300 {
+  color: var(--gray-300);
+}
+
+.header-bg {
+  background-color: var(--gray-300);
+}
+
+@media (min-width: 640px) {
+  .TheTeam__members {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .founder__bg {
+    height: 480px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .Navbar__logo {
+    width: 200px;
+  }
+
+  .Navbar__links,
+  .Navbar__social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Navbar__menu-link {
+    display: inline-block;
+    font-size: 12px;
+  }
+  .Navbar__menu-link:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  .Landing__hero {
+    margin-bottom: 0;
+  }
+
+  .Landing__video-control-btn {
+    width: 64px;
+    height: 64px;
+  }
+
+  .Landing__video-control-btn img {
+    padding: 8px;
+  }
+
+  .TheTeam__member,
+  .Specs__image,
+  .Landing__welcome-image,
+  .WelcomeClub__image {
+    flex: 0 0 auto;
+  }
+
+  .JoinSociety__socials {
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 0 0 30%;
+  }
+
+  .JoinSociety__social {
+    flex: 0 0 32%;
+  }
+
+  /* .CountDown__timer-main {
+    font-size: 24px
+  } */
+
+  .Gutters__content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Gutters__content-text {
+    flex: 0 0 50%;
+  }
+  .Gutters__content-image {
+    flex: 0 0 50%;
+  }
+  .Gutters__content-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+  }
+}

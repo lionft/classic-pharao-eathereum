@@ -1,0 +1,24 @@
+{
+  "CONTRACT_ADDRESS": "0xb93a8534446f5B2dBa9D0AbCeA89286A5c657A23",
+  "OWNER_ADDRESS": "0x1C7891A22EBf3BE91C7DF07046D7939E72005042",
+
+  "SCAN_LINK": "https://blockscout.com/etc/0xb93a8534446f5B2dBa9D0AbCeA89286A5c657A23/",
+  "NETWORK": {
+    "NAME": "Ethereum classic  ",
+    "SYMBOL": "ETC",
+    "ID": 1 
+    },
+  "NFT_NAME": "Classic pharaos",
+  "SYMBOL": "Cp",
+  "MAX_SUPPLY": 5000,
+  "WEI_COST": 20000000000000,
+  "COST1": 60000000000000000,
+
+  "DISPLAY_COST": 2,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
+  "SHOW_BACKGROUND": true
+}
+
+
